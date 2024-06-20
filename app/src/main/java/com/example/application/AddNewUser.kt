@@ -21,6 +21,7 @@ class AddNewUser : AppCompatActivity() {
     private val userViewModel: UserViewModel by viewModels {
         UserItemModelFactory((application as UserDataApplication).repository)
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = UserDataBinding.inflate(layoutInflater)

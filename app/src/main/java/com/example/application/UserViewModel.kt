@@ -12,7 +12,7 @@ import java.util.UUID
 class UserViewModel(private val repository: UserItemRepository) : ViewModel() {
     var userItems: LiveData<List<UserItem>> = repository.allUserItems.asLiveData()
 
-    public fun addUserItem(newUser: UserItem) = viewModelScope.launch {
+     fun addUserItem(newUser: UserItem) = viewModelScope.launch {
         repository.insertUserItem(newUser)
     }
 

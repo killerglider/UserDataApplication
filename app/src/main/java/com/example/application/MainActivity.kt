@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity(), UserItemClickListener {
         binding.btnNewUser.setOnClickListener {
             intent = Intent(applicationContext, AddNewUser::class.java)
             startActivity(intent)
-//            NewUserSheet(null).show(supportFragmentManager, "newUserTag")
         }
 
         setRecyclerView()
